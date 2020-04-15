@@ -4,15 +4,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Dotnet.ConsoleApplication.Template.Cli
 {
-    public static class ServiceProviderFactory
+    public static class DependencyResolver
     {
-        public static IServiceProvider Create()
-        {
-            return new ServiceCollection()
+        public static IServiceProvider Register() =>
+            new ServiceCollection()
                 .AddScoped<IEntryPoint, EntryPoint>()
-                .AddScoped<ILogger, Logger>()
+                .AddScoped<ILog, Log>()
                 .AddScoped<IInputReader, InputReader>()
                 .BuildServiceProvider();
-        }
     }
 }

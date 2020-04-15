@@ -5,16 +5,13 @@ namespace Dotnet.ConsoleApplication.Template
 {
     public class EntryPoint : IEntryPoint
     {
-        private readonly ILogger _logger;
+        private readonly ILog _log;
 
-        public EntryPoint(ILogger logger)
-        {
-            _logger = logger;
-        }
+        public EntryPoint(ILog log) => _log = log;
 
         public Task RunAsync(IOptions options)
         {
-            _logger.Info("Hello world!");
+            _log.Info("Hello world!");
 
             return Task.CompletedTask;
         }

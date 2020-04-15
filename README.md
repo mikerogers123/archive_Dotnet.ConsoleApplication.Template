@@ -16,3 +16,4 @@ Implemented in the CLI project but defined in the Contracts project.
 # Usage Guidelines
 - Clone repo
 - Rename the projects, replacing *Dotnet.ConsoleApplication.Template* with *YOUR_SOLUTION_NAME*
+- To run, run as you would any other .NET console app - either using the famous play button in Visual Studio with the CLI project set as startup project, or by using the dotnet CLI from a terminal

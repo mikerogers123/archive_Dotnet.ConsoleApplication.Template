@@ -1,6 +1,6 @@
 ﻿namespace Dotnet.ConsoleApplication.Template.Contracts
 {
-    public interface ILogger
+    public interface ILog
     {
         void Success(string message);
         void Error(string message);
