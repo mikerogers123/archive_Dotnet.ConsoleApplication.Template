@@ -1,3 +1,6 @@
+# Archived
+Replaced with https://github.com/mikerogers123/Dotnet.Cli.CookieCutter
+
 # Dotnet.ConsoleApplication.Template
 Template code for a .NET Core C# console application with the following key attributes:
 
